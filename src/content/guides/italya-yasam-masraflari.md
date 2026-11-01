@@ -6,7 +6,6 @@ category: Yaşam masrafları · 2026
 description: Düşük finansal kanıt, SSN sağlık kaydı, DSU bursu ve örnek bir Bologna bütçesi.
 lead: Güçlü akademik geleneği, uygun harçları ve zengin yaşam kültürüyle İtalya, Avrupa'nın en cazip öğrenci ülkelerinden biri. Peki yaşam gerçekten ne kadara mal olur?
 readTime: 4 dk okuma
-pdf: /Italya_Yasam_Masraflari_2026.pdf
 flag: it
 order: 4
 ---

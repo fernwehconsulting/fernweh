@@ -4,7 +4,7 @@ import { site } from '../content/site.js';
 import { WhatsApp } from './Icons.jsx';
 
 // Pages without the fixed bottom contact bar on mobile
-const NO_MOBILE_CTA = ['/iletisim', '/impressum', '/gizlilik'];
+const NO_MOBILE_CTA = ['/iletisim', '/gizlilik'];
 const noClass = () => undefined;
 
 export default function Layout() {
@@ -140,7 +140,7 @@ export default function Layout() {
           </div>
           <div className="footer-bottom">
             <span>{site.copyright}</span>
-            <span className="footer-legal"><Link to="/impressum">Impressum</Link><Link to="/gizlilik">Gizlilik</Link></span>
+            <span className="footer-legal"><Link to="/gizlilik">Gizlilik</Link></span>
           </div>
         </div>
       </footer>

@@ -13,9 +13,9 @@ React + Vite. The look is the same as the old HTML site; the difference is that 
 | Hakkımda text + timeline | `src/content/about.js` |
 | Phone, WhatsApp, e-mail, Google Form link, menu | `src/content/site.js` |
 | Guides (Rehberler) | `src/content/guides/*.md` |
-| Impressum / Gizlilik | `src/content/pages/*.md` |
+| Gizlilik (privacy policy) | `src/content/pages/gizlilik.md` |
 | Images | `public/images/` |
-| PDFs | `public/` (same file name = links keep working) |
+| Packages PDF | `public/Fernweh_Consulting_Paketler.pdf` (same file name = link keeps working) |
 | Colors, fonts, spacing | `src/styles/site.css` (top of the file: `--ink`, `--olive`, …) |
 | Page layouts (rarely needed) | `src/pages/*.jsx` |
 
@@ -40,7 +40,6 @@ category: Yaşam masrafları · 2026               (small label on the home page
 description: One sentence for cards and Google.
 lead: The intro paragraph under the title.
 readTime: 4 dk okuma
-pdf: /Fransa_Yasam_Masraflari_2026.pdf          (optional; put the PDF in public/)
 flag: fr                                        (see src/content/flags.js)
 order: 5                                        (position in lists)
 ---

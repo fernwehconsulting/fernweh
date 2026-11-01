@@ -21,7 +21,7 @@ export default function Home() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div className="hero-copy">
-            <div className="kicker" style={{ fontSize: '16px' }}>Yurt dışı eğitim danışmanlığı</div>
+            <div className="kicker hero-kicker">Yurt dışı eğitim danışmanlığı</div>
             <h1 className="display">Geleceğin <em>Avrupa'da.</em></h1>
             <p className="lead">Avrupa'da lisans, yüksek lisans ve staj fırsatları için profesyonel danışmanlık. Başvurudan kabule, vizeden uyum sürecine kadar yanınızdayım.</p>
             <div className="btn-row btn-row--stack">

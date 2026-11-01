@@ -7,7 +7,6 @@ import Rehber from './pages/Rehber.jsx';
 import Hakkimda from './pages/Hakkimda.jsx';
 import Iletisim from './pages/Iletisim.jsx';
 import LegalPage from './pages/LegalPage.jsx';
-import impressum from './content/pages/impressum.md?raw';
 import gizlilik from './content/pages/gizlilik.md?raw';
 
 // Old addresses from the previous (plain HTML) site → new pages
@@ -17,7 +16,6 @@ const OLD = {
   '/rehberler.html': '/rehberler',
   '/hakkimda.html': '/hakkimda',
   '/iletisim.html': '/iletisim',
-  '/impressum.html': '/impressum',
   '/gizlilik.html': '/gizlilik',
 };
 
@@ -38,7 +36,6 @@ export default function App() {
         <Route path="rehberler/:slug" element={<Rehber />} />
         <Route path="hakkimda" element={<Hakkimda />} />
         <Route path="iletisim" element={<Iletisim />} />
-        <Route path="impressum" element={<LegalPage source={impressum} />} />
         <Route path="gizlilik" element={<LegalPage source={gizlilik} />} />
         <Route path="*" element={<Fallback />} />
       </Route>

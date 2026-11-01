@@ -3,7 +3,6 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import CtaBand from '../components/CtaBand.jsx';
 import Flag from '../components/Flag.jsx';
 import { ArticleCard } from '../components/GuideCards.jsx';
-import { Pdf } from '../components/Icons.jsx';
 import { site } from '../content/site.js';
 import { getGuide, guides } from '../lib/guides.js';
 import { inline, renderMarkdown } from '../lib/markdown.js';
@@ -28,9 +27,6 @@ export default function Rehber() {
           <h1 className="h1" dangerouslySetInnerHTML={{ __html: inline(guide.title) }} />
           <p className="lead">{guide.lead}</p>
           <div className="meta"><span>{site.author} · {site.authorTitle}</span><span>{guide.readTime}</span></div>
-          {guide.pdf && (
-            <div className="btn-row"><a className="btn btn--ghost" href={guide.pdf} target="_blank" rel="noopener"><Pdf /> PDF olarak indir</a></div>
-          )}
         </div>
       </header>
 

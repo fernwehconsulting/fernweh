@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { inline, parseFrontmatter, renderMarkdown } from '../lib/markdown.js';
 import usePageMeta from '../lib/usePageMeta.js';
 
-// Impressum and Gizlilik — text lives in src/content/pages/*.md
+// Gizlilik — text lives in src/content/pages/gizlilik.md
 export default function LegalPage({ source }) {
   const { data, html } = useMemo(() => {
     const { data, body } = parseFrontmatter(source);

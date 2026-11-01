@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Marketing site for Fernweh Consulting (study-abroad consulting, Berlin). React 18 + Vite 5 + react-router-dom 6, deployed to GitHub Pages at `fernwehconsulting.github.io`. All user-facing text is **Turkish**; Impressum/Gizlilik are legal pages. The site owner is non-technical and edits content files directly (see README.md), so content files must stay simple, copy-pasteable JS/Markdown.
+Marketing site for Fernweh Consulting (study-abroad consulting, Berlin). React 18 + Vite 5 + react-router-dom 6, deployed to GitHub Pages at `fernwehconsulting.github.io`. All user-facing text is **Turkish**; Gizlilik (`src/content/pages/gizlilik.md`) is the privacy-policy page. The site owner is non-technical and edits content files directly (see README.md), so content files must stay simple, copy-pasteable JS/Markdown.
 
 ## Commands
 
@@ -21,7 +21,7 @@ There are no tests, linter, or formatter configured. `npm run build` is the only
 
 **Content/code split.** `src/content/` holds all editable data; `src/pages/` and `src/components/` only render it. When changing text, prices, reviews, FAQ, contact details or nav, edit `src/content/*.js` (`site.js`, `packages.js`, `reviews.js`, `faq.js`, `about.js`, `flags.js`), not the JSX. Keep the existing comments in content files — they are instructions for the owner.
 
-**Guides are file-based.** `src/lib/guides.js` uses `import.meta.glob('../content/guides/*.md', { query: '?raw', eager: true })`; each file's name is its slug (`/rehberler/<slug>`). Guides are sorted by frontmatter `order`, hidden with `draft: true`. Frontmatter fields used by pages/cards: `title` (may contain `*italic*`), `cardTitle`, `kicker`, `category`, `description`, `lead`, `readTime`, `pdf`, `flag` (key in `flags.js`), `order`, `featured`, `coverTitle`.
+**Guides are file-based.** `src/lib/guides.js` uses `import.meta.glob('../content/guides/*.md', { query: '?raw', eager: true })`; each file's name is its slug (`/rehberler/<slug>`). Guides are sorted by frontmatter `order`, hidden with `draft: true`. Frontmatter fields used by pages/cards: `title` (may contain `*italic*`), `cardTitle`, `kicker`, `category`, `description`, `lead`, `readTime`, `flag` (key in `flags.js`), `order`, `featured`, `coverTitle`.
 
 **Custom Markdown pipeline (`src/lib/markdown.js`).**
 - `parseFrontmatter` is a hand-rolled flat `key: value` parser (no YAML: no quoting, nesting or lists; `true`/`false`/numbers are coerced). Values are split on the first `:` only.
@@ -39,7 +39,7 @@ There are no tests, linter, or formatter configured. `npm run build` is the only
 
 **Styling.** One global stylesheet, `src/styles/site.css`, with design tokens as CSS variables at the top (`--ink`, `--olive`, …). No CSS modules or framework.
 
-**Static assets.** `public/images/` and the downloadable PDFs in `public/` are linked by absolute path (e.g. `/Almanya_Yasam_Masraflari_2026.pdf`); renaming a PDF breaks guide `pdf:` fields and `site.packagesPdf`.
+**Static assets.** `public/images/` and `public/Fernweh_Consulting_Paketler.pdf` are linked by absolute path; renaming the PDF breaks `site.packagesPdf` (used on the Paketler page).
 
 ## Deployment
 

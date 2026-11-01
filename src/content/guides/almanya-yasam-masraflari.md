@@ -6,7 +6,6 @@ category: Yaşam masrafları · 2026
 description: Bloke hesap, kira, sigorta, şehir kademeleri ve örnek bir Berlin bütçesiyle gerçekçi rakamlar.
 lead: "Almanya'da yaşam gerçekten ne kadara mal olur?" Kira, sağlık sigortası, market, ulaşım ve diğer kalemleri tek tek açıklayan, planlama yapmanıza yardımcı olacak bir rehber.
 readTime: 5 dk okuma
-pdf: /Almanya_Yasam_Masraflari_2026.pdf
 flag: de
 order: 2
 ---

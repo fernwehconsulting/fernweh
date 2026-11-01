@@ -235,9 +235,15 @@ p, li { text-wrap: pretty; }
 .split { display: grid; gap: 32px; }
 .portrait { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 55%; border-radius: 4px; background: var(--egg-deep); }
 @media (max-width: 899px) {
-  .portrait, .about-hero .portrait { width: 200px; max-width: 60vw; aspect-ratio: 1 / 1; border-radius: 50%; object-position: center 45%; }
+  .portrait, .about-hero .portrait { width: 200px; max-width: 60vw; aspect-ratio: 1 / 1; border-radius: 24px; object-position: center 45%; justify-self: center; margin-inline: auto; }
   .hero-media { display: none; }
   .hero { padding-top: 48px; }
+}
+/* Home hero: kicker stays on one line (shrinks on narrow phones); bigger headline on mobile */
+.hero .hero-kicker { font-size: 16px; white-space: nowrap; }
+@media (max-width: 719px) {
+  .hero .hero-kicker { font-size: clamp(11px, calc(4.3vw - 2px), 16px); }
+  .hero .display { font-size: clamp(3.25rem, 16vw, 4.5rem); }
 }
 .split .h2 { margin-bottom: 20px; }
 .split p + p { margin-top: 14px; }

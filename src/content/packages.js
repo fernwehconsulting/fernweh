@@ -33,7 +33,7 @@ export const packages = [
     subtitle: 'Almanya · Lisans & Yüksek Lisans',
     price: 1450,
     facts: ['~6 ay', 'Süreç sizin adınıza yürütülür'],
-    button: 'Hemen başla',
+    button: 'Bilgi al',
     homeTag: 'En çok tercih edilen',
     homeText:
       "Almanya'da lisans veya yüksek lisans başvurularını stressiz halletmek isteyenler için. Okul ve dil kursu seçiminden başvurulara, bloke hesaptan vizeye kadar tüm süreci sizin adınıza yürütüyorum.",

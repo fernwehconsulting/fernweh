@@ -6,7 +6,6 @@ category: Yaşam masrafları · 2026
 description: Finansal kanıt, sigorta kuralları, konut piyasası ve örnek bir Groningen bütçesi.
 lead: İngilizce programların zenginliği ve uluslararası atmosferiyle Hollanda, Avrupa'nın en popüler öğrenci ülkelerinden biri. Peki yaşam gerçekten ne kadara mal olur?
 readTime: 4 dk okuma
-pdf: /Hollanda_Yasam_Masraflari_2026.pdf
 flag: nl
 order: 3
 ---

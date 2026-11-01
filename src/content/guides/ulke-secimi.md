@@ -6,7 +6,6 @@ category: Karşılaştırma rehberi
 description: Popüler ülkeleri harç, yaşam maliyeti, eğitim dili ve mezuniyet sonrası imkânlara göre karşılaştırın.
 lead: Yurt dışında eğitimin en heyecan verici ama en kafa karıştırıcı ilk sorusu: "Hangi ülkeye gitsem?" Bu rehber, Avrupa'nın en çok tercih edilen ülkelerini birkaç sade kritere göre yan yana koyuyor.
 readTime: 4 dk okuma
-pdf: /Avrupa_Ulke_Secim_Rehberi_2026.pdf
 flag: eu
 order: 1
 featured: true
